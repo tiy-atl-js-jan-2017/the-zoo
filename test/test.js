@@ -25,6 +25,15 @@ describe('An Animal', function () {
       assert.strictEqual(jurgen.name, "Jurgen");
     });
 
+    it("should be possible for animals to relieve themselves", function () {
+      var jurgen = new Animal({
+        name: "Jurgen"
+      });
+      assert.isBelow(jurgen.vetBill, 10, 'start off with a reasonable vet bill');
+      jurgen.poop();
+      assert.isAbove(jurgen.vetBill, 10, 'vet bill gets a new cleaning fee added');
+    });
+
     it("should be possible to pet the animals", function () {
       var jurgen = new Animal({
         name: "Jurgen",
