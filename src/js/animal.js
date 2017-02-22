@@ -1,0 +1,5 @@
+function Animal () {
+
+}
+
+export { Animal };

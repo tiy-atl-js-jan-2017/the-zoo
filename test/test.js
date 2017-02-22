@@ -2,7 +2,7 @@
 import chai from 'chai';
 
 // Import Any Files to Test
-// import { Animal } from "../src/js/animal";
+import { Animal } from "../src/js/animal";
 
 // Set Chai Constants
 const expect = chai.expect;
