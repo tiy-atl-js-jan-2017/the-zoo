@@ -25,5 +25,15 @@ describe('An Animal', function () {
       assert.strictEqual(jurgen.name, "Jurgen");
     });
 
+    it("should be possible to pet the animals", function () {
+      var jurgen = new Animal({
+        name: "Jurgen",
+        status: "normal"
+      });
+      assert.strictEqual(jurgen.status, 'normal');
+      jurgen.getsPetted();
+      assert.strictEqual(jurgen.status, 'happy');
+    });
+
   });
 });
